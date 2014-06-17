@@ -1,0 +1,8 @@
+From the begining, there are 3 files for scrawling data from twitter. If you want to grab only the actor tweets, run scrawl_actors.py.
+If only grab director's tweets, run scrawl_directors.py. If you want to grab both of them one time, then run scrawl_tweets.py.
+Then the "tweets" table in database will be populated. Then run the tf_idf.py file. As teh result of TF-IDF is in memory, then run
+scipy_kmeans.py, that will execute k-means algorithm and produce the result. Then it will automatically store the result into database.
+There are also other files such as final_combat.py which can be used to calculate every actor's keywords. final_combat2.py which is
+used to calculate the keywords set for every cluster which is base on the number of K.
+In scipy_kmeans.py, the default model is to store them into txt file. If you want to store them in database, just uncomment the
+several final lines.
